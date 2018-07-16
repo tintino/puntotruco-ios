@@ -1,0 +1,16 @@
+/*
+ Localizable.strings
+ PuntoTruco
+ 
+ Created by Martin Gonzalez vega on 16/8/18.
+ Copyright © 2017 quitarts. All rights reserved.
+ */
+gameOver = "Game Over";
+isTheWinner = "win!";
+okButton = "Ok";
+us = "Us";
+them = "Them";
+resetPoints = "Reset points";
+areYouSure = "are you sure?";
+no = "NO";
+yes = "YES";

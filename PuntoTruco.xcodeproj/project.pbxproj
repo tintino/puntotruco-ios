@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36396455D71A3BA6E55E4881 /* Pods_PuntoTruco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */; };
+		4B536B8220F2E212008071E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B536B8120F2E212008071E9 /* AppDelegate.swift */; };
+		4B536B8D20F2E212008071E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B8B20F2E212008071E9 /* Main.storyboard */; };
+		4B536B8F20F2E215008071E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B8E20F2E215008071E9 /* Assets.xcassets */; };
+		4B536B9220F2E215008071E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B9020F2E215008071E9 /* LaunchScreen.storyboard */; };
+		4BF159AE20FC185D008FE5C2 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159AD20FC185D008FE5C2 /* DashViewController.swift */; };
+		4BF159B020FC29CE008FE5C2 /* PTMatchstickGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159AF20FC29CE008FE5C2 /* PTMatchstickGrid.swift */; };
+		4BF159B620FC647F008FE5C2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159B520FC647F008FE5C2 /* Alert.swift */; };
+		4BF159B920FC6662008FE5C2 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BF159B720FC6661008FE5C2 /* en.lproj */; };
+		4BF159BA20FC6662008FE5C2 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BF159B820FC6661008FE5C2 /* es.lproj */; };
+		4BF159BC20FC66BD008FE5C2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159BB20FC66BD008FE5C2 /* String+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05D21178C08454CD996579B3 /* Pods-PuntoTruco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuntoTruco.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco.release.xcconfig"; sourceTree = "<group>"; };
+		48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuntoTruco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B536B7E20F2E212008071E9 /* PuntoTruco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuntoTruco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B536B8120F2E212008071E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B536B8C20F2E212008071E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B536B8E20F2E215008071E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B536B9120F2E215008071E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B536B9320F2E215008071E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF159AD20FC185D008FE5C2 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
+		4BF159AF20FC29CE008FE5C2 /* PTMatchstickGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTMatchstickGrid.swift; sourceTree = "<group>"; };
+		4BF159B320FC6250008FE5C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		4BF159B420FC6250008FE5C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4BF159B520FC647F008FE5C2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		4BF159B720FC6661008FE5C2 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		4BF159B820FC6661008FE5C2 /* es.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
+		4BF159BB20FC66BD008FE5C2 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B85FFA4A6AA2A5F26E4BB2C8 /* Pods-PuntoTruco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuntoTruco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B536B7B20F2E212008071E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36396455D71A3BA6E55E4881 /* Pods_PuntoTruco.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B536B7520F2E212008071E9 = {
+			isa = PBXGroup;
+			children = (
+				4B536B8020F2E212008071E9 /* PuntoTruco */,
+				4B536B7F20F2E212008071E9 /* Products */,
+				8D19AE800424AEB8CAA7E358 /* Pods */,
+				88878EAC061C91CD215E3D41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B536B7F20F2E212008071E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B536B7E20F2E212008071E9 /* PuntoTruco.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B536B8020F2E212008071E9 /* PuntoTruco */ = {
+			isa = PBXGroup;
+			children = (
+				4BF159B720FC6661008FE5C2 /* en.lproj */,
+				4BF159B820FC6661008FE5C2 /* es.lproj */,
+				4BF159B120FC2ADE008FE5C2 /* View */,
+				4BF159B220FC2AEC008FE5C2 /* Controller */,
+				4BF159BD20FC69B2008FE5C2 /* Extensions */,
+				4B536B8120F2E212008071E9 /* AppDelegate.swift */,
+				4B536B8E20F2E215008071E9 /* Assets.xcassets */,
+				4B536B9320F2E215008071E9 /* Info.plist */,
+			);
+			path = PuntoTruco;
+			sourceTree = "<group>";
+		};
+		4BF159B120FC2ADE008FE5C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BF159AF20FC29CE008FE5C2 /* PTMatchstickGrid.swift */,
+				4B536B8B20F2E212008071E9 /* Main.storyboard */,
+				4B536B9020F2E215008071E9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BF159B220FC2AEC008FE5C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BF159AD20FC185D008FE5C2 /* DashViewController.swift */,
+				4BF159B520FC647F008FE5C2 /* Alert.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BF159BD20FC69B2008FE5C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BF159BB20FC66BD008FE5C2 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88878EAC061C91CD215E3D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D19AE800424AEB8CAA7E358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA4A6AA2A5F26E4BB2C8 /* Pods-PuntoTruco.debug.xcconfig */,
+				05D21178C08454CD996579B3 /* Pods-PuntoTruco.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B536B7D20F2E212008071E9 /* PuntoTruco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B536B9620F2E215008071E9 /* Build configuration list for PBXNativeTarget "PuntoTruco" */;
+			buildPhases = (
+				8A1CA1B299E0EE57F0324FA2 /* [CP] Check Pods Manifest.lock */,
+				4B536B7A20F2E212008071E9 /* Sources */,
+				4B536B7B20F2E212008071E9 /* Frameworks */,
+				4B536B7C20F2E212008071E9 /* Resources */,
+				9D7FCA57D4DAB3A8C3E186FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuntoTruco;
+			productName = PuntoTruco;
+			productReference = 4B536B7E20F2E212008071E9 /* PuntoTruco.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B536B7620F2E212008071E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = T1incho;
+				TargetAttributes = {
+					4B536B7D20F2E212008071E9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 4B536B7920F2E212008071E9 /* Build configuration list for PBXProject "PuntoTruco" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B536B7520F2E212008071E9;
+			productRefGroup = 4B536B7F20F2E212008071E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B536B7D20F2E212008071E9 /* PuntoTruco */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B536B7C20F2E212008071E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF159B920FC6662008FE5C2 /* en.lproj in Resources */,
+				4B536B8D20F2E212008071E9 /* Main.storyboard in Resources */,
+				4B536B8F20F2E215008071E9 /* Assets.xcassets in Resources */,
+				4BF159BA20FC6662008FE5C2 /* es.lproj in Resources */,
+				4B536B9220F2E215008071E9 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A1CA1B299E0EE57F0324FA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuntoTruco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7FCA57D4DAB3A8C3E186FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B536B7A20F2E212008071E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF159AE20FC185D008FE5C2 /* DashViewController.swift in Sources */,
+				4B536B8220F2E212008071E9 /* AppDelegate.swift in Sources */,
+				4BF159B620FC647F008FE5C2 /* Alert.swift in Sources */,
+				4BF159BC20FC66BD008FE5C2 /* String+Extension.swift in Sources */,
+				4BF159B020FC29CE008FE5C2 /* PTMatchstickGrid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B536B8B20F2E212008071E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B536B8C20F2E212008071E9 /* Base */,
+				4BF159B320FC6250008FE5C2 /* es */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B536B9020F2E215008071E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B536B9120F2E215008071E9 /* Base */,
+				4BF159B420FC6250008FE5C2 /* es */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B536B9420F2E215008071E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B536B9520F2E215008071E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B536B9720F2E215008071E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85FFA4A6AA2A5F26E4BB2C8 /* Pods-PuntoTruco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2RJZT4Q4P;
+				INFOPLIST_FILE = PuntoTruco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.t1ncho.PuntoTruco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B536B9820F2E215008071E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D21178C08454CD996579B3 /* Pods-PuntoTruco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2RJZT4Q4P;
+				INFOPLIST_FILE = PuntoTruco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.t1ncho.PuntoTruco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B536B7920F2E212008071E9 /* Build configuration list for PBXProject "PuntoTruco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B536B9420F2E215008071E9 /* Debug */,
+				4B536B9520F2E215008071E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B536B9620F2E215008071E9 /* Build configuration list for PBXNativeTarget "PuntoTruco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B536B9720F2E215008071E9 /* Debug */,
+				4B536B9820F2E215008071E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B536B7620F2E212008071E9 /* Project object */;
+}
