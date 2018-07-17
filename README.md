@@ -3,7 +3,7 @@ This a is Swift version of my point counter for Android made in 2010 with more t
 Is a minimalist lightweight app very useful for people how love playing Truco a very popular game on South America.
 
 # Screenshots
-![](/Screenshots/screenshot1.jpeg)
+![](/Screenshots/screenshot1.png)
 
 ## Release History
 
