@@ -24,7 +24,7 @@ struct Alert {
     
     public static func reset(onVC vc: UIViewController, onYes: @escaping () -> Void) {
         
-        let alert = UIAlertController(title: "resetPoints".translate(), message: "areYouSure".translate(), preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "resetPoints".translate(), message: "areYouSure".translate(), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "yes".translate(), style: .destructive, handler: { action in
           onYes()
         }))
