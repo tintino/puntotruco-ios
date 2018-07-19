@@ -41,7 +41,8 @@ class PTMatchstickGrid: UIView {
                 //Just the first is relative to superview
                 constrain(self.matches[i]) { matchView in
                     //Square images using height
-                    let heightFactor: CGFloat = maxPoints <= 15 ? 3.5 : 6.5
+                    let heightFactor: CGFloat = maxPoints <= 15 ? 3.5 : 6.4
+                    
                     matchView.width == matchView.superview!.height / heightFactor
                     matchView.height == matchView.superview!.height / heightFactor
                     matchView.top == matchView.superview!.top + 5
