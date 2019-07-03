@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36396455D71A3BA6E55E4881 /* Pods_PuntoTruco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */; };
+		4B1C2BDF22979B160004F7F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1C2BDE22979B150004F7F0 /* GoogleService-Info.plist */; };
 		4B536B8220F2E212008071E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B536B8120F2E212008071E9 /* AppDelegate.swift */; };
 		4B536B8D20F2E212008071E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B8B20F2E212008071E9 /* Main.storyboard */; };
 		4B536B8F20F2E215008071E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B8E20F2E215008071E9 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		05D21178C08454CD996579B3 /* Pods-PuntoTruco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuntoTruco.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco.release.xcconfig"; sourceTree = "<group>"; };
 		48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuntoTruco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1C2BDE22979B150004F7F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B536B7E20F2E212008071E9 /* PuntoTruco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuntoTruco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B536B8120F2E212008071E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B536B8C20F2E212008071E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				4BF159BD20FC69B2008FE5C2 /* Extensions */,
 				4B536B8120F2E212008071E9 /* AppDelegate.swift */,
 				4B536B8E20F2E215008071E9 /* Assets.xcassets */,
+				4B1C2BDE22979B150004F7F0 /* GoogleService-Info.plist */,
 				4B536B9320F2E215008071E9 /* Info.plist */,
 			);
 			path = PuntoTruco;
@@ -173,6 +176,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 4B536B7520F2E212008071E9;
 			productRefGroup = 4B536B7F20F2E212008071E9 /* Products */;
@@ -194,6 +198,7 @@
 				4B536B8F20F2E215008071E9 /* Assets.xcassets in Resources */,
 				4BF159BA20FC6662008FE5C2 /* es.lproj in Resources */,
 				4B536B9220F2E215008071E9 /* LaunchScreen.storyboard in Resources */,
+				4B1C2BDF22979B160004F7F0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,16 +229,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

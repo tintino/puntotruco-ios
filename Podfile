@@ -7,5 +7,8 @@ target 'PuntoTruco' do
 
   # Pods for PuntoTruco
   pod 'Cartography', '~> 3.0'
-	
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  
+
 end

@@ -14,9 +14,9 @@ class PTMatchstickGrid: UIView {
     // MARK - private vars
     
     private static let tagBase = 100
-    private var matches: [UIView] = []
+    private var matches = [UIView]()
     private var maxPoints = 30
-    private var points = 0
+    public var points = 0
     
     // MARK - public vars
     
@@ -35,6 +35,8 @@ class PTMatchstickGrid: UIView {
     }    
     
     override func updateConstraints() {
+        
+        
         for i in 0 ..< self.matches.count {
             
             if i <= 4 {
@@ -95,6 +97,22 @@ class PTMatchstickGrid: UIView {
         points = 0
         updateConstraints()
     }
+    
+    public func setPoints(value: Int) {
+        
+        guard value >= 0 else { return }
+        
+        let alpha = abs(points - value)
+        
+        for _ in 0..<alpha {
+            if value > points {
+                add()
+            } else {
+                substract()
+            }
+        }
+    }
+    
     
     public func substract() {
         

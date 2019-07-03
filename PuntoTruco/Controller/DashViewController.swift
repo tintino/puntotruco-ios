@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class DashViewController: UIViewController {
     
@@ -18,6 +19,9 @@ class DashViewController: UIViewController {
     @IBOutlet weak var gridUs: PTMatchstickGrid!
     @IBOutlet weak var gridThem: PTMatchstickGrid!
     
+    
+    
+    var ref: DatabaseReference!
     // MARK - UIViewController methods
     
     override func viewDidLoad() {
@@ -31,9 +35,37 @@ class DashViewController: UIViewController {
         gridThem.setTotal(withMaxValue: 15)
         separator.isHidden = true
          */
+        
+        ref = Database.database().reference()
+        
+        
+        ref.child("JugadaId").observe(DataEventType.value, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            // ...
+            self.gridUs.setPoints(value: postDict["us"] as! Int)
+            
+            self.gridThem.setPoints(value: postDict["them"] as! Int)
+            
+        })
+        
     }
     
     // MARK - private methods
+    
+    func addUSPoint() {
+        
+        //self.ref.child("JugadaId").setValue(["us": gridUs.points])
+        
+        self.ref.child("JugadaId/us").setValue(gridUs.points)
+
+    }
+    
+    func addThemPoint() {
+        
+        
+        self.ref.child("JugadaId/them").setValue(gridThem.points)
+    }
+    
     
     private func setupGridUs() {
         gridUs.onMaxPointsReached = {
@@ -52,18 +84,23 @@ class DashViewController: UIViewController {
     
     @IBAction func usAddPoint(_ sender: Any) {
         gridUs.add()
+        addUSPoint()
     }
     
     @IBAction func usSubstractPoint(_ sender: Any) {
         gridUs.substract()
+        addUSPoint()
     }
     
     @IBAction func themAddPoint(_ sender: Any) {
         gridThem.add()
+        addThemPoint()
     }
     
     @IBAction func themSubstractPoint(_ sender: Any) {
         gridThem.substract()
+        
+        addThemPoint()
     }
     
     @IBAction func resetPoints(_ sender: Any) {
