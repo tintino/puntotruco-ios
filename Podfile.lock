@@ -1,5 +1,5 @@
 PODS:
-  - Cartography (3.0.2)
+  - Cartography (4.0.0)
   - Firebase/Core (6.0.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 6.0.0)
@@ -61,13 +61,12 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
-  - Cartography (~> 3.0)
+  - Cartography
   - Firebase/Core
   - Firebase/Database
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Cartography
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuthInterop
@@ -78,9 +77,11 @@ SPEC REPOS:
     - GoogleUtilities
     - leveldb-library
     - nanopb
+  trunk:
+    - Cartography
 
 SPEC CHECKSUMS:
-  Cartography: 231190d7d0b3107ce8d67c54189f059a509b3760
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
   Firebase: fa80b9d987ca014a1ba9357496ef2a0178b28b12
   FirebaseAnalytics: 1743c5f4de3687d0745709dfdc4b1dea1484f44c
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
@@ -92,6 +93,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 9e818b0fe9dfc8ebd9c615468e3ecf90c0bea444
+PODFILE CHECKSUM: 26fb5cc0f13e04bbf0987c4d9a7f0b7e833d02ea
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

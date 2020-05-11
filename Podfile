@@ -6,7 +6,7 @@ target 'PuntoTruco' do
   use_frameworks!
 
   # Pods for PuntoTruco
-  pod 'Cartography', '~> 3.0'
+  pod 'Cartography'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   

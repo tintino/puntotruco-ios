@@ -10,7 +10,7 @@ import UIKit
 
 struct Alert {
     private static func showBasicAlert(onVC vc: UIViewController, withTitle title: String, message msg: String, andOk ok:String) {
-        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: ok, style: .default, handler: nil))
         vc.present(alert, animated: true, completion: nil)
     }

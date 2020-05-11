@@ -3,21 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		36396455D71A3BA6E55E4881 /* Pods_PuntoTruco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */; };
 		4B1C2BDF22979B160004F7F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1C2BDE22979B150004F7F0 /* GoogleService-Info.plist */; };
+		4B31787B2467DBB000E36A6C /* VCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31787A2467DBB000E36A6C /* VCSettings.swift */; };
+		4B31787D2467E01100E36A6C /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31787C2467E01100E36A6C /* GameManager.swift */; };
+		4B31787F2467EE1000E36A6C /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31787E2467EE1000E36A6C /* URL+Extension.swift */; };
+		4B3178872468AE9400E36A6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B3178892468AE9400E36A6C /* Localizable.strings */; };
+		4B31788C2468AEF000E36A6C /* VMMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31788B2468AEEF00E36A6C /* VMMain.swift */; };
+		4B31788E2468B21500E36A6C /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31788D2468B21500E36A6C /* LiveData.swift */; };
+		4B3178902468CC8500E36A6C /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31788F2468CC8500E36A6C /* Notification+Extension.swift */; };
 		4B536B8220F2E212008071E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B536B8120F2E212008071E9 /* AppDelegate.swift */; };
 		4B536B8D20F2E212008071E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B8B20F2E212008071E9 /* Main.storyboard */; };
 		4B536B8F20F2E215008071E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B8E20F2E215008071E9 /* Assets.xcassets */; };
 		4B536B9220F2E215008071E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B536B9020F2E215008071E9 /* LaunchScreen.storyboard */; };
-		4BF159AE20FC185D008FE5C2 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159AD20FC185D008FE5C2 /* DashViewController.swift */; };
+		4BF159AE20FC185D008FE5C2 /* VCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159AD20FC185D008FE5C2 /* VCMain.swift */; };
 		4BF159B020FC29CE008FE5C2 /* PTMatchstickGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159AF20FC29CE008FE5C2 /* PTMatchstickGrid.swift */; };
 		4BF159B620FC647F008FE5C2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159B520FC647F008FE5C2 /* Alert.swift */; };
-		4BF159B920FC6662008FE5C2 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BF159B720FC6661008FE5C2 /* en.lproj */; };
-		4BF159BA20FC6662008FE5C2 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BF159B820FC6661008FE5C2 /* es.lproj */; };
 		4BF159BC20FC66BD008FE5C2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF159BB20FC66BD008FE5C2 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,19 +30,23 @@
 		05D21178C08454CD996579B3 /* Pods-PuntoTruco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuntoTruco.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco.release.xcconfig"; sourceTree = "<group>"; };
 		48C9F5CE8966DD802EE28D16 /* Pods_PuntoTruco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuntoTruco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1C2BDE22979B150004F7F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B31787A2467DBB000E36A6C /* VCSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSettings.swift; sourceTree = "<group>"; };
+		4B31787C2467E01100E36A6C /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		4B31787E2467EE1000E36A6C /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		4B3178882468AE9400E36A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4B31788A2468AEAA00E36A6C /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4B31788B2468AEEF00E36A6C /* VMMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMMain.swift; sourceTree = "<group>"; };
+		4B31788D2468B21500E36A6C /* LiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
+		4B31788F2468CC8500E36A6C /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		4B536B7E20F2E212008071E9 /* PuntoTruco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuntoTruco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B536B8120F2E212008071E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B536B8C20F2E212008071E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B536B8E20F2E215008071E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B536B9120F2E215008071E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B536B9320F2E215008071E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BF159AD20FC185D008FE5C2 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
+		4BF159AD20FC185D008FE5C2 /* VCMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMain.swift; sourceTree = "<group>"; };
 		4BF159AF20FC29CE008FE5C2 /* PTMatchstickGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTMatchstickGrid.swift; sourceTree = "<group>"; };
-		4BF159B320FC6250008FE5C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		4BF159B420FC6250008FE5C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4BF159B520FC647F008FE5C2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		4BF159B720FC6661008FE5C2 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
-		4BF159B820FC6661008FE5C2 /* es.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
 		4BF159BB20FC66BD008FE5C2 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B85FFA4A6AA2A5F26E4BB2C8 /* Pods-PuntoTruco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuntoTruco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,8 +84,6 @@
 		4B536B8020F2E212008071E9 /* PuntoTruco */ = {
 			isa = PBXGroup;
 			children = (
-				4BF159B720FC6661008FE5C2 /* en.lproj */,
-				4BF159B820FC6661008FE5C2 /* es.lproj */,
 				4BF159B120FC2ADE008FE5C2 /* View */,
 				4BF159B220FC2AEC008FE5C2 /* Controller */,
 				4BF159BD20FC69B2008FE5C2 /* Extensions */,
@@ -84,6 +91,10 @@
 				4B536B8E20F2E215008071E9 /* Assets.xcassets */,
 				4B1C2BDE22979B150004F7F0 /* GoogleService-Info.plist */,
 				4B536B9320F2E215008071E9 /* Info.plist */,
+				4B31787C2467E01100E36A6C /* GameManager.swift */,
+				4B3178892468AE9400E36A6C /* Localizable.strings */,
+				4B31788B2468AEEF00E36A6C /* VMMain.swift */,
+				4B31788D2468B21500E36A6C /* LiveData.swift */,
 			);
 			path = PuntoTruco;
 			sourceTree = "<group>";
@@ -101,8 +112,9 @@
 		4BF159B220FC2AEC008FE5C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4BF159AD20FC185D008FE5C2 /* DashViewController.swift */,
+				4BF159AD20FC185D008FE5C2 /* VCMain.swift */,
 				4BF159B520FC647F008FE5C2 /* Alert.swift */,
+				4B31787A2467DBB000E36A6C /* VCSettings.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				4BF159BB20FC66BD008FE5C2 /* String+Extension.swift */,
+				4B31787E2467EE1000E36A6C /* URL+Extension.swift */,
+				4B31788F2468CC8500E36A6C /* Notification+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 				TargetAttributes = {
 					4B536B7D20F2E212008071E9 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -176,7 +191,7 @@
 			knownRegions = (
 				en,
 				Base,
-				es,
+				"es-419",
 			);
 			mainGroup = 4B536B7520F2E212008071E9;
 			productRefGroup = 4B536B7F20F2E212008071E9 /* Products */;
@@ -193,10 +208,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF159B920FC6662008FE5C2 /* en.lproj in Resources */,
+				4B3178872468AE9400E36A6C /* Localizable.strings in Resources */,
 				4B536B8D20F2E212008071E9 /* Main.storyboard in Resources */,
 				4B536B8F20F2E215008071E9 /* Assets.xcassets in Resources */,
-				4BF159BA20FC6662008FE5C2 /* es.lproj in Resources */,
 				4B536B9220F2E215008071E9 /* LaunchScreen.storyboard in Resources */,
 				4B1C2BDF22979B160004F7F0 /* GoogleService-Info.plist in Resources */,
 			);
@@ -228,19 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuntoTruco/Pods-PuntoTruco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -254,22 +261,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF159AE20FC185D008FE5C2 /* DashViewController.swift in Sources */,
+				4B3178902468CC8500E36A6C /* Notification+Extension.swift in Sources */,
+				4BF159AE20FC185D008FE5C2 /* VCMain.swift in Sources */,
+				4B31787F2467EE1000E36A6C /* URL+Extension.swift in Sources */,
 				4B536B8220F2E212008071E9 /* AppDelegate.swift in Sources */,
 				4BF159B620FC647F008FE5C2 /* Alert.swift in Sources */,
+				4B31787D2467E01100E36A6C /* GameManager.swift in Sources */,
 				4BF159BC20FC66BD008FE5C2 /* String+Extension.swift in Sources */,
+				4B31788C2468AEF000E36A6C /* VMMain.swift in Sources */,
+				4B31788E2468B21500E36A6C /* LiveData.swift in Sources */,
 				4BF159B020FC29CE008FE5C2 /* PTMatchstickGrid.swift in Sources */,
+				4B31787B2467DBB000E36A6C /* VCSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4B3178892468AE9400E36A6C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3178882468AE9400E36A6C /* en */,
+				4B31788A2468AEAA00E36A6C /* es-419 */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		4B536B8B20F2E212008071E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4B536B8C20F2E212008071E9 /* Base */,
-				4BF159B320FC6250008FE5C2 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -278,7 +299,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4B536B9120F2E215008071E9 /* Base */,
-				4BF159B420FC6250008FE5C2 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -412,13 +432,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2RJZT4Q4P;
 				INFOPLIST_FILE = PuntoTruco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.t1ncho.PuntoTruco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -431,13 +452,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2RJZT4Q4P;
 				INFOPLIST_FILE = PuntoTruco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.t1ncho.PuntoTruco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

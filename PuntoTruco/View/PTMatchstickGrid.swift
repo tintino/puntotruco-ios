@@ -6,23 +6,25 @@
 //  Copyright © 2018 T1incho. All rights reserved.
 //
 
-import UIKit
 import Cartography
 
 class PTMatchstickGrid: UIView {
     
-    // MARK - private vars
-    
+    // MARK: - vars and cons
+
+    // Used to avoid remove rootview (tag = 0)
     private static let tagBase = 100
+    
     private var matches = [UIView]()
     private var maxPoints = 30
+    
     public var points = 0
     
-    // MARK - public vars
+    // MARK: - public vars
     
     public var onMaxPointsReached: (() -> Void)?
     
-    // MARK - UIView methods
+    // MARK: - UIView methods
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,8 +37,6 @@ class PTMatchstickGrid: UIView {
     }    
     
     override func updateConstraints() {
-        
-        
         for i in 0 ..< self.matches.count {
             
             if i <= 4 {
@@ -77,12 +77,12 @@ class PTMatchstickGrid: UIView {
         super.updateConstraints()
     }
     
-    // MARK - private methods
+    // MARK: - private methods
     
     private func commonInit() {
     }
     
-    // MARK - public methods
+    // MARK:: - public methods
     
     public func setTotal(withMaxValue max: Int) {
         maxPoints = max
@@ -99,20 +99,13 @@ class PTMatchstickGrid: UIView {
     }
     
     public func setPoints(value: Int) {
-        
         guard value >= 0 else { return }
         
         let alpha = abs(points - value)
-        
         for _ in 0..<alpha {
-            if value > points {
-                add()
-            } else {
-                substract()
-            }
+            value > points ? add() : substract()
         }
     }
-    
     
     public func substract() {
         
@@ -136,7 +129,6 @@ class PTMatchstickGrid: UIView {
         if let image = UIImage(named: "matchstick_\(mod)") {
             let imageView = UIImageView()
             imageView.image = image
-            // To avoid remove rootview (tag = 0) use base points
             imageView.tag = points + PTMatchstickGrid.tagBase
             matches.append(imageView)
             addSubview(imageView)

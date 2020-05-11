@@ -13,11 +13,19 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private var keyGameId = "gameId"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("PuntoTruco: app open url")
+        if let gameId = url.valueOf(keyGameId) {
+            postGuestGameNotification(gameId: gameId)
+        }
         return true
     }
 
@@ -43,6 +51,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // MARK: - private methods
+    
+    private func postGuestGameNotification(gameId: String) {
+        print("PuntoTruco: postGuestGameNotification:\(gameId)")
+        let info: [String: String] = [keyGameId: gameId]
+        DispatchQueue.main.async {
+            NotificationCenter.default.post(name: .guestPlay, object: nil, userInfo: info)
+        }
+    }
 }
 
